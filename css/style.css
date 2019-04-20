@@ -856,7 +856,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clubs .composition__photo:hover {
-    outline: 1.5rem solid #55c57a;
+    outline: 1rem solid #55c57a;
     transform: scale(1.05) translateY(2rem);
     box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.4);
     z-index: 20;

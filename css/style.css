@@ -833,17 +833,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .composition__photo--p1 {
     left: 60%;
-    top: 20px;
+    top: 0px;
 }
 
 .composition__photo--p2 {
     left: 40%;
-    top: 100px;
+    top: 110px;
 }
 
 .composition__photo--p3 {
     left: 20%;
-    top: 250px;
+    top: 220px;
 }
 
 @media(max-width:1000px) {

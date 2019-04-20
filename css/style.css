@@ -710,7 +710,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #clubs {
 
     color: #000;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
+    background: linear-gradient(112.15334473777807deg, rgba(249, 63, 72, 1) 5.533854166666667%, rgba(250, 183, 121, 1) 96.67968749999999%);
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
 }
 
 #clubs .lead {
@@ -771,13 +773,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clubs .background1 {
     background-color: #fff;
-    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     padding: 20px 0;
 }
 
 #clubs .background2 {
     background-color: #fff;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
 }
 
 

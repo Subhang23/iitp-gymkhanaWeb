@@ -866,7 +866,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: scale(0.95);
 }
 
+/* Events Section */
 
+#events{
+    
+}
 
 /* Gallery Section
 --------------------------------*/

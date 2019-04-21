@@ -586,6 +586,37 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 0;
     left: calc(50% - 20px);
 }
+.section-header h2 {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
 
 .section-header p {
     text-align: center;
@@ -717,6 +748,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100%;
     background: linear-gradient(112.15334473777807deg, rgba(249, 63, 72, 1) 5.533854166666667%, rgba(250, 183, 121, 1) 96.67968749999999%);
 }
+
 #clubs .col-content-text{
     margin: 0;
     padding: 0;
@@ -966,6 +998,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   #events .events-extra h4 {
     font-weight: 600;
     font-size: 24px;
+  }
+  #events .shadow{
+    -webkit-box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
+    box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
   }
 
 /* Gallery Section

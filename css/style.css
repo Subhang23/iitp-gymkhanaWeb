@@ -773,7 +773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: translateY(-50%);
     left: 0;
     width: 100%;
-    padding: 40px 80px;
+    padding: 0px 20px 0px 60px;
     box-sizing: border-box;
     text-align: center;
 }

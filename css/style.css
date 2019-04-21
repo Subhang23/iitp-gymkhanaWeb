@@ -736,10 +736,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0 20px 20px 20px;
 }
 
-/* Events Section 
------------------------*/
-
-
 
 /* Clubs Section
 --------------------------------*/
@@ -753,7 +749,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0;
     padding: 0;
     font-family: sans-serif; 
-    height: 500px;
+    height: 600px;
 }
 .row-clubs{
     padding: 25px 0;
@@ -870,12 +866,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .composition__photo--p2 {
     left: 40%;
-    top: 110px;
+    top: 150px;
 }
 
 .composition__photo--p3 {
     left: 20%;
-    top: 220px;
+    top: 300px;
 }
 
 @media(max-width:1000px) {

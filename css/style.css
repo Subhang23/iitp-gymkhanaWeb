@@ -626,7 +626,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Section with background
 --------------------------------*/
-
 .section-bg {
     background: #f7f7f7;
 }
@@ -643,6 +642,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     z-index: 10;
 }
+.about-col{
+    text-align: justify;
+}
 
 .about-col-clip1 {
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 90%);
@@ -652,18 +654,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about-col-clip2 {
     clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     padding: 100px;
-}
-
-@media(max-width: 500px) {
-    .about-col-clip1 {
-        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
-        padding: 10px;
-    }
-
-    .about-col-clip2 {
-        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
-        padding: 10px;
-    }
 }
 
 #about .about-col {
@@ -736,6 +726,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0 20px 20px 20px;
 }
 
+@media(max-width: 500px) {
+    .about-col-clip1 {
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+        padding: 50px 10px;
+    }
+
+    .about-col-clip2 {
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+        padding: 50px 10px;
+    }
+}
 
 /* Clubs Section
 --------------------------------*/
@@ -993,6 +994,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   
   #events .events-extra {
     padding-top: 60px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,.5);
   }
   
   #events .events-extra h4 {
@@ -1003,6 +1005,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
     -moz-box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
     box-shadow: 10px 3px 17px -5px rgba(0,0,0,0.62);
+  }
+
+  @media(max-width: 500px){
+    #events {
+        padding: 60px 20px;
+      }
   }
 
 /* Gallery Section
@@ -1142,6 +1150,70 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Team Section
 --------------------------------*/
+.section-header h1 {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header h1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-header h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-header h2 {
+    font-size: 26px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 150px);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #188ed2;
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+
 #team {
     padding: 0;
     background: #fff;
@@ -1294,6 +1366,42 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 5px;
     background-color: #fff;
 }
+
+/* tab controllers */
+.panel{
+    display: none;
+}
+.panel.active{
+    display: block;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.nav button{
+    transform: skewX(-30deg);
+    padding: 10px;
+    margin: 5px 5px;
+    border: none;
+    outline: none;
+    background: rgb(41, 41, 41);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transition: .3s;
+}
+.nav button:hover{
+    transform: skewX(-25deg);
+    background: #009f00;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+.nav button.active{
+    background: #009f00;
+    box-shadow: 0 5px 15px #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
